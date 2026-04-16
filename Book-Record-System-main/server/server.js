@@ -25,9 +25,9 @@ app.use("/uploads", express.static("uploads"));
 
 app.use("/api/auth", authRouter);
 app.use("/api/books", bookRouter);
-
+const MoURI = process.env.MONGO_URI;
 mongoose
-  .connect("mongodb+srv://itsyashchandratre004:I1FPzMOsgKgIKhd2@mycluster.hshaztv.mongodb.net/")
+  .connect(MoURI)
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => {
     console.error("MongoDB Error:", err);
