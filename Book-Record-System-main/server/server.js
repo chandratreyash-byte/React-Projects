@@ -27,7 +27,7 @@ app.use("/api/auth", authRouter);
 app.use("/api/books", bookRouter);
 
 mongoose
-  .connect("process.env.MONGO_URL")
+  .connect("mongodb+srv://itsyashchandratre004:I1FPzMOsgKgIKhd2@mycluster.hshaztv.mongodb.net/")
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => {
     console.error("MongoDB Error:", err);
