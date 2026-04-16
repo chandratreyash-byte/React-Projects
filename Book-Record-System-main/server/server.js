@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 8000;
 
 app.use(
   cors({
-    origin: "https://bookrecord-by-yash.netlify.app/",
+    origin: "https://bookrecord-by-yash.netlify.app",
     credentials: true,
   })
 );
